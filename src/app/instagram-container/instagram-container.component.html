@@ -1,0 +1,10 @@
+<div class="flexcontainer center">
+    <p>INSTAGRAM</p>
+  <p>{{instaMediaUrls}}</p>
+    <ng-container *ngFor="let url of instaMediaUrls">
+      <div>
+        <img src="{{url}}">
+      </div>
+    </ng-container>
+</div>
+

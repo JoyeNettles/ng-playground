@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+$pink: #ff0598;
+$grey: #212020;
+$xxl-device: 1690px;
+$xl-device: 1280px;
+$lg-device: 980px;
+$md-device: 736px;
+$sm-device: 480px;
+
+.flexcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media all and (min-width: $md-device) {
+  .flexcontainer {
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .divider{
+    visibility: hidden;
+    position: absolute;
+  }
+}
+
+@media all and (max-width: $md-device) {
+  .flexcontainer {
+    flex-direction: column;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+hr {
+  width: 30vw;
+  background-color: $grey;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 0;
+  color: $grey;
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: 2em;
+}
